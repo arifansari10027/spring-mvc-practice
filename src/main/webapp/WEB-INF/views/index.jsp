@@ -14,5 +14,13 @@
 
 <h1>Testing the configuration</h1>
 
+<%
+    String name = (String) request.getAttribute("name");
+    String email = (String) request.getAttribute("email");
+%>
+
+<h1> My userid is <%=name%> </h1>
+<h2> My email id is <%=email%></h2>
+
 </body>
 </html>
