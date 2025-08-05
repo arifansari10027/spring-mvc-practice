@@ -1,6 +1,7 @@
 package controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,11 +16,17 @@ public class FormController {
     @RequestMapping(path = "/processform", method = RequestMethod.POST)
     public String processForm(@RequestParam("email") String email,
                               @RequestParam("username") String username,
-                              @RequestParam("password") String password) {
+                              @RequestParam("password") String password,
+                              Model model) {
 
         System.out.println("Username : " + username);
         System.out.println("Email : " + email);
         System.out.println("Password : " + password);
+
+        model.addAttribute("name", "username");
+        model.addAttribute("name","email");
+        model.addAttribute("name","password");
+
 
         return "formsuccess";
     }
