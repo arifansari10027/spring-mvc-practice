@@ -5,6 +5,8 @@
   Time: 13:03
   To change this template use File | Settings | File Templates.
 --%>
+
+<%@page isELIgnored="false" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,12 +14,12 @@
 </head>
 <body>
 
-<%
-  String name = (String)request.getAttribute("name");
-%>
+<%--<%--%>
+<%--  String name = (String)request.getAttribute("name");--%>
+<%--%>--%>
 
     <h1>Example of help page (ModelViewController Functionality</h1>
-      <h2>My name is <%=name%></h2>
+      <h2>My name is </h2> ${name}
 
 </body>
 </html>
