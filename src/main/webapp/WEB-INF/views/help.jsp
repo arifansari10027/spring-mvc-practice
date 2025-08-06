@@ -18,7 +18,7 @@
 <%--  String name = (String)request.getAttribute("name");--%>
 <%--%>--%>
 
-    <h1>Example of help page (ModelViewController Functionality</h1>
+    <h1>Example of help page (ModelViewController Functionality)</h1>
       <h2>My name is </h2> ${name}
 
 </body>
